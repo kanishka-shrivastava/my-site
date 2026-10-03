@@ -10,6 +10,8 @@
   <meta property="og:title" content="Kanishka Shrivastava AI Automation Specialist">
   <meta property="og:description" content="AI agents, workflow automation, API integrations for businesses that want work to move faster.">
   <meta property="og:url" content="https://kanishkashrivastava.com/">
+  <meta property="og:image" content="https://www.kanishkashrivastava.com/img.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://kanishkashrivastava.com/">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='20' fill='%231A0F0A'/%3E%3Ctext x='48' y='62' text-anchor='middle' font-family='Georgia,serif' font-size='42' font-weight='700' fill='%235C7A3E'%3EKS%3C/text%3E%3C/svg%3E">
   <title>Kanishka Shrivastava AI Automation Specialist</title>
@@ -187,6 +189,7 @@
     .mini-card-desc { font-size: 0.72rem; color: var(--cream-mute); line-height: 1.5; }
 
     /* PROJECTS */
+    .section-title { font-family: 'DM Serif Display', Georgia, serif; font-size: clamp(2.6rem, 5vw, 4.8rem); line-height: 1.05; color: var(--cream); margin-bottom: 2.5rem; }
     .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
     .project-card { position: relative; overflow: hidden; background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r2); padding: 1.75rem; transition: border-color 280ms, transform 280ms, box-shadow 280ms; display: flex; flex-direction: column; }
     .project-card:hover { border-color: var(--border); transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(92,122,62,0.2); }
@@ -202,7 +205,9 @@
     .pv-indigo { background: linear-gradient(135deg, #150E08, #221508, #150E08); border: 1px solid rgba(184,112,72,0.3); }
     .pv-copper { background: linear-gradient(135deg, #120C06, #1E1408, #120C06); border: 1px solid rgba(184,112,72,0.4); }
     .project-name { font-family: 'DM Serif Display', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2.2rem); color: var(--cream); margin-bottom: 0.65rem; line-height: 1.1; }
+    .project-problem { font-size: 0.8rem; font-weight: 500; color: var(--copper); line-height: 1.5; margin-bottom: 0.6rem; }
     .project-desc { font-size: 0.9rem; color: var(--cream-dim); line-height: 1.7; flex: 1; }
+    .project-result { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border2); font-size: 0.82rem; color: var(--cream-dim); line-height: 1.6; }
     .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.25rem; }
     .project-tag { padding: 0.3rem 0.65rem; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.04em; border-radius: 999px; background: rgba(92,122,62,0.1); color: var(--gold-lt); border: 1px solid rgba(92,122,62,0.22); }
     .project-link { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 1.5rem; font-size: 0.82rem; font-weight: 600; color: var(--gold); transition: gap 180ms, color 180ms; }
@@ -225,6 +230,18 @@
     .template-stack span { font-size: 0.65rem; font-weight: 600; padding: 0.22rem 0.55rem; border-radius: 999px; background: var(--surface2); color: var(--cream-mute); border: 1px solid var(--border2); }
     .view-all-wrap { text-align: center; margin-top: 2rem; }
 
+    /* PROCESS */
+    .process-intro { font-size: 1rem; color: var(--cream-dim); line-height: 1.7; max-width: 560px; margin: -1.5rem 0 2.5rem; }
+    .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; counter-reset: step; }
+    .step { counter-increment: step; padding: 1.5rem; background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r); }
+    .step::before { content: counter(step); display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; margin-bottom: 1rem; border-radius: 50%; background: var(--gold-dim); border: 1px solid var(--border); font-size: 0.8rem; font-weight: 700; color: var(--gold-lt); }
+    .step-title { font-size: 0.98rem; font-weight: 600; color: var(--cream); margin-bottom: 0.45rem; }
+    .step-desc { font-size: 0.82rem; color: var(--cream-mute); line-height: 1.6; }
+    .engage-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 1.25rem; }
+    .engage { padding: 1.5rem; background: linear-gradient(135deg, rgba(92,122,62,0.08), rgba(184,112,72,0.05)); border: 1px solid var(--border); border-radius: var(--r); }
+    .engage-title { font-family: 'DM Serif Display', Georgia, serif; font-size: 1.3rem; color: var(--cream); margin-bottom: 0.4rem; }
+    .engage-desc { font-size: 0.82rem; color: var(--cream-dim); line-height: 1.6; }
+
     /* CONTACT */
     .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
     .contact-heading { font-family: 'DM Serif Display', Georgia, serif; font-size: clamp(2.8rem, 5vw, 5rem); color: var(--cream); line-height: 1.02; margin-bottom: 1rem; }
@@ -240,7 +257,9 @@
     .form-select { appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(245,236,215,0.38)' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; cursor: pointer; }
     .form-select option { background: #1C1008; color: var(--cream); }
     .form-textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
+    .form-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
     .form-submit { width: 100%; justify-content: center; margin-top: 0.2rem; }
+    .form-submit:disabled { opacity: 0.7; cursor: wait; transform: none; }
     .form-success { display: none; text-align: center; font-size: 0.88rem; color: #4ade80; font-weight: 500; margin-top: 0.5rem; padding: 0.75rem; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); border-radius: 0.75rem; }
     .form-error { display: none; text-align: center; font-size: 0.88rem; color: #f87171; font-weight: 500; margin-top: 0.5rem; padding: 0.75rem; background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2); border-radius: 0.75rem; }
 
@@ -262,15 +281,18 @@
       .about-card-row { grid-template-columns: 1fr 1fr; }
       .projects-grid { grid-template-columns: 1fr 1fr; }
       .templates-grid { grid-template-columns: 1fr 1fr; }
+      .process-grid { grid-template-columns: 1fr 1fr; }
+      .engage-row { grid-template-columns: 1fr; }
       .creator-hero { grid-template-columns: 1fr; }
       .contact-wrap { grid-template-columns: 1fr; }
     }
     @media (max-width: 620px) {
       .nav a:not(.nav-cta) { display: none; }
-      .nav a:nth-child(1), .nav a:nth-child(2), .nav a.nav-cta { display: block; }
+      .nav a:nth-child(1), .nav a:nth-child(2), .nav a:nth-child(3), .nav a.nav-cta { display: block; }
       .about-card-row { grid-template-columns: 1fr 1fr; }
       .projects-grid { grid-template-columns: 1fr; }
       .templates-grid { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr; }
       .footer-inner { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -303,6 +325,7 @@
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#creator">n8n</a>
+    <a href="#process">Process</a>
     <a href="#contact" class="nav-cta">Let's build</a>
   </nav>
 
@@ -350,6 +373,12 @@
               <span class="skill-tag">Webhooks</span>
               <span class="skill-tag">JavaScript</span>
               <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Supabase</span>
+              <span class="skill-tag">WhatsApp Cloud API</span>
+              <span class="skill-tag">Groq</span>
+              <span class="skill-tag">Gemini</span>
+              <span class="skill-tag">Google Sheets</span>
+              <span class="skill-tag">Vercel</span>
             </div>
           </div>
         </div>
@@ -368,36 +397,50 @@
   <section id="projects" class="section-gap reveal">
     <div class="container">
       <div class="eyebrow">Projects</div>
-      <h2 style="font-family:'DM Serif Display',Georgia,serif; font-size:clamp(2.6rem,5vw,4.8rem); line-height:1.05; color:var(--cream); margin-bottom:2.5rem;">Selected work.</h2>
+      <h2 class="section-title">Selected work.</h2>
       <div class="projects-grid">
+
         <article class="project-card featured glass">
           <div class="project-visual pv-gold"><span class="pv-icon">⚙️</span></div>
           <div class="project-name">AI Prompt Generator</div>
+          <p class="project-problem">The problem: a single prompt attempt is hit or miss.</p>
           <p class="project-desc">Three specialist agents (creative, marketing, and technical) each take the same user request from a different angle. A judge agent then selects the strongest prompt.</p>
+          <!-- Add real numbers when you have them, then uncomment:
+          <p class="project-result"><strong>Result:</strong> [e.g. X prompts generated, Y testers, avg. generation time]</p> -->
           <div class="project-tags"><span class="project-tag">Multi-Agent</span><span class="project-tag">n8n</span><span class="project-tag">Groq</span><span class="project-tag">Cohere</span></div>
-          <a class="project-link" href="https://prompt-view.vercel.app/" target="_blank" rel="noreferrer">View live project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg></a>
+          <a class="project-link" href="https://prompt-view.vercel.app/" target="_blank" rel="noopener noreferrer">View live project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg></a>
         </article>
+
         <article class="project-card glass">
           <div class="project-visual pv-teal"><span class="pv-icon">🧱</span></div>
           <div class="project-name">n8n App Builder</div>
+          <p class="project-problem">The problem: going from idea to a working interface takes too long.</p>
           <p class="project-desc">Generate web apps instantly through n8n workflows. Users describe what they want, and the system turns that into a working app interface.</p>
+          <!-- <p class="project-result"><strong>Result:</strong> [e.g. apps generated, typical build time]</p> -->
           <div class="project-tags"><span class="project-tag">n8n</span><span class="project-tag">Gemini</span><span class="project-tag">Vercel</span></div>
-          <a class="project-link" href="https://n8n-webapp-builder.vercel.app/" target="_blank" rel="noreferrer">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg></a>
+          <a class="project-link" href="https://n8n-webapp-builder.vercel.app/" target="_blank" rel="noopener noreferrer">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg></a>
         </article>
+
         <article class="project-card glass">
           <div class="project-visual pv-indigo"><span class="pv-icon">🗣️</span></div>
           <div class="project-name">FluentFlow AI</div>
+          <p class="project-problem">The problem: most language apps forget you between sessions.</p>
           <p class="project-desc">An AI English tutor with persistent memory using Supabase, guiding learners through speaking, grammar, and vocabulary practice.</p>
+          <!-- <p class="project-result"><strong>Result:</strong> [e.g. practice sessions run, learners tested]</p> -->
           <div class="project-tags"><span class="project-tag">AI Tutor</span><span class="project-tag">Supabase</span><span class="project-tag">n8n</span></div>
-          <a class="project-link" href="https://fluentflow-ai-kohl.vercel.app/" target="_blank" rel="noreferrer">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg></a>
+          <a class="project-link" href="https://fluentflow-ai-kohl.vercel.app/" target="_blank" rel="noopener noreferrer">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg></a>
         </article>
+
         <article class="project-card glass">
           <div class="project-visual pv-copper"><span class="pv-icon">📸</span></div>
           <div class="project-name">AI Content Repurposer</div>
+          <p class="project-problem">The problem: rewriting one piece of content for every platform by hand.</p>
           <p class="project-desc">Paste your content and get 4 platform-ready posts in seconds.</p>
+          <!-- <p class="project-result"><strong>Result:</strong> [e.g. posts generated, time saved per piece]</p> -->
           <div class="project-tags"><span class="project-tag">API</span><span class="project-tag">n8n</span><span class="project-tag">Vercel</span></div>
-          <a class="project-link" href="https://content-repurposer-kappa.vercel.app/" target="_blank" rel="noreferrer">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg></a>
+          <a class="project-link" href="https://content-repurposer-kappa.vercel.app/" target="_blank" rel="noopener noreferrer">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg></a>
         </article>
+
       </div>
     </div>
   </section>
@@ -413,7 +456,7 @@
           <h2 class="creator-heading">20+ open source<br>automation templates.</h2>
           <p class="creator-sub">Sharing AI automation workflows with the global n8n community through published templates and practical automations.</p>
         </div>
-        <a class="btn btn-gold" href="https://n8n.io/creators/kanishka-shrivastava/" target="_blank" rel="noreferrer">View creator profile <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg></a>
+        <a class="btn btn-gold" href="https://n8n.io/creators/kanishka-shrivastava/" target="_blank" rel="noopener noreferrer">View creator profile <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg></a>
       </div>
       <div class="templates-grid">
         <article class="template-card"><div class="template-icon">💬</div><div class="template-name">WhatsApp Lead Qualifier</div><p class="template-desc">AI qualifies inbound leads over WhatsApp, scores them, and routes hot leads to a CRM dashboard automatically.</p><div class="template-stack"><span>WhatsApp API</span><span>Supabase</span><span>Groq</span></div></article>
@@ -421,7 +464,28 @@
         <article class="template-card"><div class="template-icon">🍽️</div><div class="template-name">Restaurant Reservation Bot</div><p class="template-desc">AI-powered reservation system for restaurants. Collects bookings via WhatsApp and logs to Supabase.</p><div class="template-stack"><span>WhatsApp</span><span>Supabase</span><span>n8n</span></div></article>
         <article class="template-card"><div class="template-icon">🏥</div><div class="template-name">Clinic Appointment Bot</div><p class="template-desc">Automates appointment booking, confirmations, and reminders for small clinics via WhatsApp.</p><div class="template-stack"><span>WhatsApp API</span><span>Supabase</span><span>Gemini</span></div></article>
       </div>
-      <div class="view-all-wrap"><a class="btn btn-ghost" href="https://n8n.io/creators/kanishka-shrivastava/" target="_blank" rel="noreferrer">View all 20+ templates →</a></div>
+      <div class="view-all-wrap"><a class="btn btn-ghost" href="https://n8n.io/creators/kanishka-shrivastava/" target="_blank" rel="noopener noreferrer">View all 20+ templates →</a></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="process" class="section-gap reveal">
+    <div class="container">
+      <div class="eyebrow">Process</div>
+      <h2 class="section-title">How a build works.</h2>
+      <p class="process-intro">A clear path from "this is slow" to a system you can rely on, with you involved at the points that matter.</p>
+      <div class="process-grid">
+        <div class="step"><div class="step-title">Map the workflow</div><p class="step-desc">We walk through how the work happens today: who does what, which tools are involved, and where time gets lost.</p></div>
+        <div class="step"><div class="step-title">Design the system</div><p class="step-desc">I decide what should be automated, what needs AI, and where a person should approve before anything goes out.</p></div>
+        <div class="step"><div class="step-title">Build and test</div><p class="step-desc">I build it in n8n and connect your tools, then test with real examples, including the awkward edge cases.</p></div>
+        <div class="step"><div class="step-title">Hand over and improve</div><p class="step-desc">You get documentation and a walkthrough. I stay available to adjust it as your process changes.</p></div>
+      </div>
+      <div class="engage-row">
+        <div class="engage"><div class="engage-title">Fixed-scope build</div><p class="engage-desc">One workflow or agent, scoped and agreed upfront.</p></div>
+        <div class="engage"><div class="engage-title">Ongoing support</div><p class="engage-desc">Monitoring, fixes, and new automations as your needs grow.</p></div>
+        <div class="engage"><div class="engage-title">Custom template</div><p class="engage-desc">A ready-to-import n8n workflow adapted to your business.</p></div>
+      </div>
     </div>
   </section>
 
@@ -436,18 +500,18 @@
           <p class="contact-body">If your business has repeated tasks, scattered tools, slow follow-ups, or manual reporting, I can turn that friction into an AI-powered system that works quietly in the background.</p>
           <div style="display:flex; flex-wrap:wrap; gap:0.75rem;">
             <a class="btn btn-gold" href="mailto:shrivastavakanishka06@gmail.com">Send an email</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/kanishka-shrivastava-496785336" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/kanishka-shrivastava-496785336" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
         <div class="contact-panel">
           <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
             <div class="form-group">
               <label class="form-label" for="cf-name">Your name</label>
-              <input class="form-input" type="text" id="cf-name" name="name" required>
+              <input class="form-input" type="text" id="cf-name" name="name" autocomplete="name" required>
             </div>
             <div class="form-group">
               <label class="form-label" for="cf-email">Email address</label>
-              <input class="form-input" type="email" id="cf-email" name="email" required>
+              <input class="form-input" type="email" id="cf-email" name="email" autocomplete="email" required>
             </div>
             <div class="form-group">
               <label class="form-label" for="cf-subject">What do you need?</label>
@@ -465,12 +529,17 @@
               <label class="form-label" for="cf-message">Tell me about it</label>
               <textarea class="form-input form-textarea" id="cf-message" name="message" required></textarea>
             </div>
+            <!-- Honeypot: real visitors never see or fill this. Bots usually do. -->
+            <div class="form-hp" aria-hidden="true">
+              <label for="cf-website">Leave this field empty</label>
+              <input type="text" id="cf-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
             <button type="submit" class="btn btn-gold form-submit" id="formSubmitBtn">
               Send message
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg>
             </button>
-            <div class="form-success" id="formSuccess">✦ Message sent! I'll get back to you soon.</div>
-            <div class="form-error" id="formError">Something went wrong. Please email me directly at shrivastavakanishka06@gmail.com</div>
+            <div class="form-success" id="formSuccess" role="status">✦ Message sent! I'll get back to you soon.</div>
+            <div class="form-error" id="formError" role="alert">Your message didn't go through. Please try again, or email me directly at shrivastavakanishka06@gmail.com</div>
           </form>
         </div>
       </div>
@@ -480,11 +549,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-copy">© 2025 Kanishka Shrivastava · AI | Automation | Workflow Specialist · Bhopal, India</span>
+        <span class="footer-copy">© <span id="year">2026</span> Kanishka Shrivastava · AI | Automation | Workflow Specialist · Bhopal, India</span>
         <div class="footer-links">
           <a href="mailto:shrivastavakanishka06@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/kanishka-shrivastava-496785336" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://n8n.io/creators/kanishka-shrivastava/" target="_blank" rel="noreferrer">n8n</a>
+          <a href="https://www.linkedin.com/in/kanishka-shrivastava-496785336" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://n8n.io/creators/kanishka-shrivastava/" target="_blank" rel="noopener noreferrer">n8n</a>
         </div>
       </div>
     </div>
@@ -492,6 +561,9 @@
 
   <script>
     const CONTACT_WEBHOOK = 'https://n8n-service-utzr.onrender.com/webhook/contact-form';
+    const SEND_LABEL = 'Send message <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg>';
+
+    document.getElementById('year').textContent = new Date().getFullYear();
 
     async function handleFormSubmit(e) {
       e.preventDefault();
@@ -499,6 +571,9 @@
       const btn = document.getElementById('formSubmitBtn');
       const successEl = document.getElementById('formSuccess');
       const errorEl = document.getElementById('formError');
+
+      // Honeypot filled in: pretend success, send nothing.
+      if (form.website.value) { successEl.style.display = 'block'; form.reset(); return; }
 
       btn.textContent = 'Sending...';
       btn.disabled = true;
@@ -512,11 +587,16 @@
         message: form.message.value.trim()
       };
 
+      // Free hosting tiers can take a while to wake up, so allow up to 45 seconds.
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 45000);
+
       try {
         const res = await fetch(CONTACT_WEBHOOK, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
+          body: JSON.stringify(payload),
+          signal: controller.signal
         });
         if (res.ok) {
           successEl.style.display = 'block';
@@ -526,9 +606,11 @@
         }
       } catch {
         errorEl.style.display = 'block';
+      } finally {
+        clearTimeout(timer);
       }
 
-      btn.innerHTML = 'Send message <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 13L13 3M13 3H7M13 3v6"/></svg>';
+      btn.innerHTML = SEND_LABEL;
       btn.disabled = false;
     }
 
